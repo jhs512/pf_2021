@@ -15,6 +15,10 @@
   <!-- 제이쿼리 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <!-- 풀페이지 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
+
   <!-- 사이트 공통 JS -->
   <script src="resource/common.js" defer></script>
   <!-- 사이트 공통 CSS -->
@@ -23,8 +27,8 @@
 
 <body>
   <div class="site-wrap">
-    <header class="top-bar container mx-auto px-3">
-      <a href="index.ssg.php">메인</a>
-      <a href="aboutMe.ssg.php">자기소개</a>
+    <header class="top-bar container mx-auto px-3 fixed top-0 left-0 w-full z-50 bg-black">
+      <a class="<?=$pageCode == "main" ? 'text-red-500' : ''?>" href="index.ssg.php">메인</a>
+      <a class="<?=$pageCode == "aboutMe" ? 'text-red-500' : ''?>" href="aboutMe.ssg.php">자기소개</a>
     </header>
     <main>
